@@ -1,0 +1,21 @@
+// colors
+$base-background-color: #10b981;
+$base-background-color-light: #34d399;
+$base-background-color-white: rgb(255, 255, 255);
+
+// mixins
+@mixin minMaxWidth($width) {
+  min-width: $width;
+  max-width: $width;
+}
+
+@mixin minMaxHeight($height) {
+  min-height: $height;
+  max-height: $height;
+}
+
+:export {
+  baseBackgroundColor: $base-background-color;
+  baseBackgroundColorLight: $base-background-color-light;
+  baseBackgroundColorWhite: $base-background-color-white;
+}
